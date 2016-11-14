@@ -7,13 +7,13 @@ import (
 )
 
 type GeoPoint struct {
-	a       int     // simple int
-	aLong   int64   // long int
-	aDouble float64 // double float64
+	a         int     // simple int
+	aLong     int64   // long int
+	timeStamp float64 // double float64
 }
 
 func (pt *GeoPoint) printStats() {
-	fmt.Println(pt.a, pt.aLong, pt.aDouble)
+	fmt.Println(pt.a, pt.aLong, pt.timeStamp)
 }
 
 func main() {
